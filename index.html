@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusList - Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h2>✓ FocusList</h2>
+            <span>MY PRODUCTIVITY</span>
+        </header>
+
+        <section class="hero">
+            <h1>Your day, <span>your focus.</span></h1>
+            <p>Organize your tasks and make every day productive.</p>
+        </section>
+
+        <div class="task-box">
+
+            <div class="heading">
+                <div>
+                    <h2>My Tasks</h2>
+                    <p id="taskCount">0 tasks planned</p>
+                </div>
+                <div class="progress">
+                    <span id="progressText">0% completed</span>
+                    <div class="progress-bg">
+                        <div id="progressBar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <form id="taskForm">
+                <input type="text" id="taskInput"
+                    placeholder="Enter your new task..." required>
+                <button type="submit">+ Add Task</button>
+            </form>
+
+            <div class="filters">
+                <button class="filter active" data-filter="all">All</button>
+                <button class="filter" data-filter="active">Active</button>
+                <button class="filter" data-filter="completed">Completed</button>
+            </div>
+
+            <ul id="taskList"></ul>
+
+            <div class="footer">
+                <span id="remaining">0 remaining</span>
+                <button id="clearCompleted">Clear Completed</button>
+            </div>
+
+        </div>
+
+        <footer>
+            Built with HTML, CSS & JavaScript ❤️
+        </footer>
+~
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
